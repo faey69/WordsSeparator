@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/twstyle.css" />
+    <title>Words Separator</title>
+  </head>
+  <body>
+    <h1
+      class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl"
+    >
+      Words Separator
+    </h1>
+    <textarea
+      id="textInput"
+      type="text"
+      placeholder="Enter string here..."
+      class="block p-2.5 w-full min-h-20 my-6 text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+    >
+myPowerShallBeAbsoluteifyouwantitthenyou'llhavetotakeit</textarea
+    >
+
+    <div class="grid grid-cols-2 gap-4 mb-4">
+      <div class="flex items-center">
+        <input
+          type="checkbox"
+          id="camel"
+          name="caseOption"
+          value="camelCase"
+          class="cursor-pointer w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+        />
+        <label
+          for="camel"
+          class="cursor-pointer ms-2 text-lg font-medium text-gray-900"
+        >
+          camelCase
+        </label>
+      </div>
+
+      <div class="flex items-center">
+        <input
+          type="checkbox"
+          id="pascal"
+          name="caseOption"
+          value="pascalCase"
+          class="cursor-pointer w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+        />
+        <label
+          for="pascal"
+          class="cursor-pointer ms-2 text-lg font-medium text-gray-900"
+        >
+          PascalCase
+        </label>
+      </div>
+
+      <div class="flex items-center">
+        <input
+          type="checkbox"
+          id="snake"
+          name="caseOption"
+          value="snakeCase"
+          class="cursor-pointer w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+        />
+        <label
+          for="snake"
+          class="cursor-pointer ms-2 text-lg font-medium text-gray-900"
+        >
+          snake_case
+        </label>
+      </div>
+
+      <div class="flex items-center">
+        <input
+          type="checkbox"
+          id="kebab"
+          name="caseOption"
+          value="kebabCase"
+          class="cursor-pointer w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+        />
+        <label
+          for="kebab"
+          class="cursor-pointer ms-2 text-lg font-medium text-gray-900"
+        >
+          kebab-case
+        </label>
+      </div>
+    </div>
+
+    <button
+      id="splitBtn"
+      class="text-white bg-blue-700 hover:bg-blue-800 active:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-8 py-2.5 me-2 mb-2 focus:outline-none"
+    >
+      Split
+    </button>
+
+    <div id="outputDiv" class="my-4 text-lg font-bold"></div>
+
+    <script src="./javascripts/wordsNinja.js"></script>
+    <script src="./javascripts/splitString.js"></script>
+    <script src="./javascripts/handleInput.js"></script>
+  </body>
+</html>
