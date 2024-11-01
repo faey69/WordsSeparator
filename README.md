@@ -1,4 +1,4 @@
-This tool helps you separate words and format them into camelCase, kebab-case, PascalCase, and snake_case.  
+This tool helps you separate words that are concatenated without separators, and format them into camelCase, kebab-case, PascalCase, and snake_case.  
 
 
   
