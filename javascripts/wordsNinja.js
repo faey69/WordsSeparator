@@ -11,7 +11,7 @@ let maxCost = 9e999;
  */
 class WordsNinja {
   async loadDictionary() {
-    const response = await fetch("../words-en.txt"); // Update with the correct path
+    const response = await fetch("./../words-en.txt"); // Update with the correct path
     if (!response.ok) throw new Error("Failed to load dictionary");
 
     // Read the text file instead of JSON
